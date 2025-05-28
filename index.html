@@ -33,4 +33,24 @@
 <div class="social-links">
     <a href="https://wa.me/573217884979" target="_blank">WhatsApp</a>
   </div>
-  
+  <a href="https://wa.me/?text=https://https://tupakamarudelperu.github.io/" target="_blank" class="share-btn">
+  Compartir por WhatsApp
+</a>
+<button class="share-btn" onclick="sharePage()">Compartir esta página</button>
+
+<script>
+  function sharePage() {
+    if (navigator.share) {
+      navigator.share({
+        title: 'Chalchi Glotón',
+        text: '¡Mira el menú de Chalchi Glotón!',
+        url: window.location.href
+      })
+      .catch(console.error);
+    } else {
+      alert('Tu navegador no admite esta función. Usa el botón de WhatsApp.');
+    }
+  }
+</script>
+
+
