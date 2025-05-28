@@ -116,22 +116,39 @@ main {
         gap: 1rem;
     }
 }
-.share-btn {
-  background-color: #df1811;
-  color: white;
-  padding: 0.7rem 1.2rem;
-  border: none;
-  border-radius: 8px;
-  font-weight: bold;
-  text-decoration: none;
-  font-size: 1rem;
-  cursor: pointer;
-  display: inline-block;
-  margin-top: 1rem;
-  transition: background-color 0.3s;
+.compartir {
+  text-align: center;
+  margin-top: 2rem;
 }
 
-.share-btn:hover {
-  background-color: #ec0c0c;
+.compartir button,
+.compartir a {
+  background-color: #e20e0e;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.2rem;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  margin: 0.5rem auto;
+  transition: background-color 0.3s;
+  max-width: 90%;
 }
+
+.compartir button:hover,
+.compartir a:hover {
+  background-color: #e41010;
+}
+
+@media (max-width: 600px) {
+  .compartir button,
+  .compartir a {
+    width: 100%;
+    font-size: 1rem;
+  }
+}
+
 
