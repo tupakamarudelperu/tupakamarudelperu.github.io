@@ -69,7 +69,7 @@ main {
 }
 
 #menu a:hover {
-    background-color: #ff885e;
+    background-color: #dae087;
 }
 
 
@@ -93,8 +93,8 @@ main {
 }
 
 .social-links a:hover {
-    background-color: #ff885e;
-    color: rgb(199, 31, 31);
+    background-color: #28b309;
+    color: rgb(23, 201, 7);
 }
 
 @media (max-width: 600px) {
@@ -140,7 +140,7 @@ main {
 
 .compartir button:hover,
 .compartir a:hover {
-  background-color: #e41010;
+  background-color: #ce1c05;
 }
 
 @media (max-width: 600px) {
@@ -149,6 +149,22 @@ main {
     width: 100%;
     font-size: 1rem;
   }
+}
+.social-links {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+
+.icono-ws {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  transition: transform 0.2s;
+}
+
+.icono-ws:hover { 
+  transform: scale(1.1);
 }
 
 
