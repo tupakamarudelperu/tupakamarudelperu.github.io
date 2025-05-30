@@ -167,4 +167,32 @@ main {
   transform: scale(1.1);
 }
 
+.redes-flotantes {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  z-index: 999;
+}
+
+.icono-flotante {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease;
+}
+
+.icono-flotante:hover {
+  transform: scale(1.15);
+}
+
+@media (max-width: 600px) {
+  .icono-flotante {
+    width: 42px;
+    height: 42px;
+  }
+}
 
